@@ -1,0 +1,95 @@
+@media(min-width: 0px) {
+
+    #photos {
+        /* Prevent vertical gaps */
+        line-height: 0;
+
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0px;
+        -moz-column-count: 5;
+        -moz-column-gap: 0px;
+        column-count: 1;
+        column-gap: 0px;
+    }
+}
+
+@media(min-width: 320px) {
+
+    #photos {
+        /* Prevent vertical gaps */
+        line-height: 0;
+
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0px;
+        -moz-column-count: 5;
+        -moz-column-gap: 0px;
+        column-count: 3;
+        column-gap: 0px;
+    }
+}
+
+@media(min-width: 768px) {
+    #photos {
+        /* Prevent vertical gaps */
+        line-height: 0;
+
+        -webkit-column-count: 5;
+        -webkit-column-gap: 0px;
+        -moz-column-count: 5;
+        -moz-column-gap: 0px;
+        column-count: 5;
+        column-gap: 0px;
+    }
+}
+
+
+
+
+#photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.test2 {
+
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.test2:hover::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #ffffffbf;
+    border-radius: 2%;
+}
+
+.test2:hover::after {
+    background-color: transparent;
+    border-radius: 2%;
+}
+
+.test2:hover {
+
+    box-shadow: rgba(0, 0, 0, 0.504) 0 8px 15px;
+    transform: scale(1.1);
+}
+
+.bruh {
+    display: none;
+}
+
+@media(min-width: 768px) {
+
+    .test2:hover .bruh {
+        display: block;
+        top: 50%;
+        left: 50%;
+    }
+}
