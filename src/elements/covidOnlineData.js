@@ -231,8 +231,8 @@ const covidOnlineDataArray = [
         ലെ വലിയകുട്ടി ചെറിയ കുട്ടിയോട് : "ഈ പുഴയിൽ ആണ് ഞാൻ പണ്ട് ഒന്നരവയസ്സിൽ നീന്തിത്തുടിച്ചിരുന്നത്!
         `,
         img: "./covidOnline/Memories/Puthenvelikkara.jpg",
-        author: "",
-        batch: "",
+        author: "Malavika",
+        batch: "26 BATCH",
         authorImg: "",
       },
       {

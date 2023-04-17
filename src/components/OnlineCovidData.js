@@ -26,7 +26,11 @@ const OnlineCovidData = () => {
               <h1>{item.title}</h1>
               {/* <center> */}
               <img
-                style={{ height: "500px", width: "500px", objectFit: 'contain' }}
+                style={{
+                  height: "500px",
+                  width: "500px",
+                  objectFit: "contain",
+                }}
                 alt="title image"
                 src={"/img/" + tmpImgURL}
               />

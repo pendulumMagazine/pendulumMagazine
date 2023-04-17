@@ -13,6 +13,7 @@ import MonthlyReport from "./MonthlyReport";
 import OnlineCovidSection from "./OnlineCovidSection";
 import ForTheFirstTime from "./ForTheFirstTime";
 import UnionMembers from "./UnionMembers";
+import Alumni from "./Alumni";
 
 const Home = () => {
   const [array, setArray] = useState([]);
@@ -43,15 +44,15 @@ const Home = () => {
         </div>
       </div>
 
-      <Notes />
-
       <center>
+        <Notes />
         <HomeCard title="malayalam" heading={array} />
         <HomeCard title="english" heading={array} />
         <HomeCard title="hindi" heading={array} />
         <Gallery />
         <CovidComponent />
         <OnlineCovidSection />
+        <Alumni />
         <Report />
         <ForTheFirstTime />
         <UnionMembers />

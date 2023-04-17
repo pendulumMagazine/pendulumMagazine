@@ -27,6 +27,9 @@ const CovidComponent = () => {
     {
       url: require("../elements/covidElements/offimg6.jpg"),
     },
+  ];
+
+  const imgItemsOnCampus = [
     {
       url: require("../elements/covidElements/img1.jpg"),
     },
@@ -77,6 +80,62 @@ const CovidComponent = () => {
         </div>
         <div className="">
           <p className="family mt-10">Awareness and prevention</p>
+          <div className="">
+            <Carousel
+              // partialVisible={true}
+              responsive={responsive}
+              infinite={true}
+              // containerClass="cardSize"
+              // className="container"
+              autoPlay={true}
+              autoPlaySpeed={3000}
+              // centerMode={true}
+              // partialVisbile={true}
+              // showDots={true}
+              // renderButtonGroupOutside={Fade}
+            >
+              {imgItemsOnCampus.map((item, index) => {
+                // console.log(key)
+
+                return (
+                  <div
+                    key={index}
+                    // className="test"
+                    style={{
+                      textAlign: "bottom",
+                      background: "#282828",
+                      fontSize: "150%",
+                      height: "50vh",
+                      width: "80%",
+                      // backgroundColor: 'transparent',
+                      backgroundImage: `url(${item.url})`,
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                      borderRadius: "2%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <center style={{ width: "85%" }}>
+                      <h1
+                        className="module line-clamp headingText"
+                        style={{
+                          fontSize: "125%",
+                          fontFamily: "fantasy",
+                          color: "#fff",
+                          letterSpacing: "4px",
+                        }}
+                      ></h1>
+                    </center>
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
+          <p className="font-bold text-red-500 my-3">
+            IMMUNE BOOSTER DISTRIBUTION AT COLLEGE FOR ALL STUDENTS
+          </p>
+          <hr style={{ width: "80%" }} />
           <div className="">
             <Carousel
               // partialVisible={true}

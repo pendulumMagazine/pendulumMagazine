@@ -87,16 +87,7 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
         },
       ],
     },
-    {
-      title: "SIGNATURE",
-      subTitle: "PENDULUM",
-      description: `First ever E-magazine publishing as a website. `,
-      img: [
-        {
-          url: require("../elements/forTheFirstTime/signature.jpg"),
-        },
-      ],
-    },
+
     {
       title: "FRIENDSHIP & MEMORY",
       subTitle: "ABLAZE CORNER",
@@ -119,6 +110,16 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
         },
         {
           url: require("../elements/forTheFirstTime/friendship/InShot_20230315_011409086.jpg"),
+        },
+      ],
+    },
+    {
+      title: "SIGNATURE",
+      subTitle: "PENDULUM",
+      description: `First ever E-magazine publishing as a website. `,
+      img: [
+        {
+          url: require("../elements/forTheFirstTime/signature.jpg"),
         },
       ],
     },

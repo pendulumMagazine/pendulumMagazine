@@ -9,6 +9,11 @@ const ViewAllImages = () => {
 
   const navigate = useNavigate();
 
+  const [artist, setArtist] = useState({
+    name: "",
+    batch: "",
+  });
+
   useEffect(() => {
     (async () => {
       const query = new Parse.Query("Gallery");
@@ -32,7 +37,16 @@ const ViewAllImages = () => {
       <div style={{ paddingInline: "50px" }} id="photos">
         {array.map((key, index) => {
           return (
-            <div key={index} className="test2">
+            <div
+              key={index}
+              onMouseOver={() =>
+                setArtist({
+                  name: key.get("artist"),
+                  batch: key.get("batch"),
+                })
+              }
+              className="test2"
+            >
               <img
                 key={index}
                 src={key.get("img")._url}
@@ -77,6 +91,39 @@ const ViewAllImages = () => {
           );
         })}
       </div>
+      <center>
+        {/* <h1 className='module line-clamp headingText' style={{ fontSize: '125%', fontFamily: 'fantasy', color: '#fff', letterSpacing: '4px' }}>{key.get('title')}</h1> */}
+        <p
+          style={{
+            position: "absolute",
+            bottom: "50px",
+            left: "10px",
+            fontSize: "20px",
+            fontFamily: "fantasy",
+            color: "#000000",
+            letterSpacing: "2px",
+            textOverflow: "ellipsis",
+            // maxWidth: "50px",
+            // overflow: "scroll",
+          }}
+        >
+          {artist.name}
+        </p>
+        <p
+          style={{
+            position: "absolute",
+            bottom: "30px",
+            left: "10px",
+            fontSize: "17px",
+            fontFamily: "fantasy",
+            color: "#000000",
+            letterSpacing: "2px",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {artist.batch}
+        </p>
+      </center>
     </div>
   );
 };

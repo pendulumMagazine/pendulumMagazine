@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import "../styles/ViewAllImages.css";
 
 const OnlineCovidGallery = () => {
   const location = useLocation();
@@ -6,6 +8,12 @@ const OnlineCovidGallery = () => {
   const data = location.state.data;
   const navigate = useNavigate();
   console.log(data, name);
+
+  const [author, setAuthor] = useState({
+    name: "",
+    batch: "",
+  });
+
   return (
     <div style={{ padding: "10px" }}>
       <p className="cursor backButton" onClick={() => navigate(-1)}>
@@ -21,7 +29,16 @@ const OnlineCovidGallery = () => {
           const tmpImgURL = `/img/${key.img.split("./")[1]}`;
           console.log(tmpImgURL);
           return (
-            <div key={index} className="test2">
+            <div
+              key={index}
+              onMouseOver={() =>
+                setAuthor({
+                  name: key.author,
+                  batch: key.batch,
+                })
+              }
+              className="test2"
+            >
               <img
                 key={index}
                 src={`${tmpImgURL}`}
@@ -66,6 +83,41 @@ const OnlineCovidGallery = () => {
           );
         })}
       </div>
+      <center>
+        {/* <h1 className='module line-clamp headingText' style={{ fontSize: '125%', fontFamily: 'fantasy', color: '#fff', letterSpacing: '4px' }}>{key.get('title')}</h1> */}
+        <p
+          style={{
+            position: "absolute",
+            bottom: "50px",
+            left: "10px",
+            fontSize: "20px",
+            fontFamily: "fantasy",
+            color: "#000000",
+            letterSpacing: "2px",
+            textOverflow: "ellipsis",
+            // maxWidth: "50px",
+            // overflow: "scroll",
+          }}
+        >
+          {author.name}
+        </p>
+        <p
+          style={{
+            position: "absolute",
+            bottom: "30px",
+            left: "10px",
+            fontSize: "17px",
+            fontFamily: "fantasy",
+            color: "#000000",
+            letterSpacing: "2px",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {/* {`(`} */}
+          {author.batch}
+          {/* {` batch)`} */}
+        </p>
+      </center>
     </div>
   );
 };
