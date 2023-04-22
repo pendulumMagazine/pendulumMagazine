@@ -3,10 +3,9 @@ const ForTheFirstTime = () => {
     {
       title: "Education",
       subTitle: "CEPHALON",
+      link: "https://tinyurl.com/etz2banr",
       description: `Question booklet series for all 4 years (includes University question papers of more than 10 years)
-      For obtaining this, use the link given below
-
-https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/1CpN6eE18JPdAy8vK1dSI1VtD3FftLrvp?sort=13&direction=a`,
+      For obtaining this, use the link given below`,
       img: [
         {
           url: require("../elements/forTheFirstTime/education/IMG_20230314_235339.jpg"),
@@ -25,6 +24,7 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
     {
       title: "INFRASTRUCTURE",
       subTitle: "",
+      link: "",
       description: `In association with PTA, renovated and painted washroom with full fledged latrines, napkin vending mechine and napkin incinerator.`,
       img: [
         {
@@ -44,10 +44,8 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
     {
       title: "ENTERTAINMENT",
       subTitle: "DHANAK",
-      description: `One month-long online arts fest including more than 100 events, bringing new experiences for students and creating core memories stored in our Instagram page specially created for the arts fest 2020.
-
-      https://instagram.com/dhanak_2020?igshid=YmMyMTA2M2Y=
-      `,
+      link: "https://tinyurl.com/3usfnpht",
+      description: `One month-long online arts fest including more than 100 events, bringing new experiences for students and creating core memories stored in our Instagram page specially created for the arts fest 2020.`,
       img: [
         {
           url: require("../elements/forTheFirstTime/entertainment/IMG_20230315_002246.jpg"),
@@ -60,11 +58,11 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
     {
       title: "INNOVATIVE",
       subTitle: "CANDID",
-      description: `Padiar's own radio station with student radio jockeys making each week fun with music, chit chats, and fun activities.
-
-      https://www.spreaker.com/show/dpmhmccandidradio?fbclid=PAAabD1YgShL8AktoGEQ39plAV6Hj3hRECL1_L5hVVefXxrexKSt3wyvNvlkE
-      
-      https://instagram.com/_candidtalks_?igshid=YmMyMTA2M2Y=`,
+      link:
+        //  `https://www.spreaker.com/show/dpmhmccandidradio?fbclid=PAAabD1YgShL8AktoGEQ39plAV6Hj3hRECL1_L5hVVefXxrexKSt3wyvNvlkE
+        // `,
+        `https://tinyurl.com/whx6bzps`,
+      description: `Padiar's own radio station with student radio jockeys making each week fun with music, chit chats, and fun activities.`,
       img: [
         {
           url: require("../elements/forTheFirstTime/innovative/IMG_20230315_003502.jpg"),
@@ -144,7 +142,7 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
                   return (
                     <div
                       key={index}
-                      className="mx-2 my-1 border-dark border border-solid border-2"
+                      className="mx-2 my-1 border-dark rounded-lg border border-solid border-2"
                     >
                       <img
                         style={{
@@ -152,14 +150,19 @@ https://drive.google.com/drive/mobile/folders/1CiUJ2iISAarjQbHSeRK_s5T56-dMxWKn/
                         }}
                         key={index}
                         src={i.url}
+                        className="rounded-lg"
                       />
                     </div>
                   );
                 })}
               </center>
-              <p className="tracking-wide sm:mx-10 my-2">
+              <p className="tracking-wide" style={{ whiteSpace: "inherit" }}>
                 {report.description}
+                {/* <div dangerouslySetInnerHTML={{ __html: report.description }} /> */}
               </p>
+              <a href={report.link} style={{ width: "90%" }}>
+                {report.link}
+              </a>
               <hr style={{ maxWidth: "80%" }} />
             </center>
           );

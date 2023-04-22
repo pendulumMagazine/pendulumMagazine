@@ -14,6 +14,7 @@ import OnlineCovidSection from "./OnlineCovidSection";
 import ForTheFirstTime from "./ForTheFirstTime";
 import UnionMembers from "./UnionMembers";
 import Alumni from "./Alumni";
+import Family from "./Family";
 
 const Home = () => {
   const [array, setArray] = useState([]);
@@ -37,10 +38,6 @@ const Home = () => {
             Pendulum - An apparatus consisting of an object mounted so that it
             swings freely under the influence of gravity. 2020 - 21
           </p>
-          {/* <p className="quote">
-            "There is no one who loves pain itself, who seeks after it and wants
-            to have it, simply because it is pain..."
-          </p> */}
         </div>
       </div>
 
@@ -55,6 +52,7 @@ const Home = () => {
         <Alumni />
         <Report />
         <ForTheFirstTime />
+        <Family />
         <UnionMembers />
 
         <h1 className="text-center">THANKYOU</h1>

@@ -12,6 +12,7 @@ import CardPage from "../components/CardPage";
 import OnlineCovidGallery from "../components/OnlineCovidGallery";
 import OnlineCovidData from "../components/OnlineCovidData";
 import AlumniDet from "../components/AlumniDet";
+import FamilyGallery from "../components/FamilyGallery";
 
 const Routing = () => {
   return (
@@ -26,6 +27,7 @@ const Routing = () => {
             />
             <Route path="/onlinecoviddata/:id" element={<OnlineCovidData />} />
             <Route path="/alumniDet/:id" element={<AlumniDet />} />
+            <Route path="/family/:id" element={<FamilyGallery />} />
 
             <Route path="/" element={<Home />} />
             <Route path="/insert" element={<UploadPost />} />

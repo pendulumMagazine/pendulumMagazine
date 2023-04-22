@@ -199,7 +199,7 @@ const Feb = () => {
                                     {
                                         report.img.map((i, index) => {
                                             return (
-                                                <div key={index} className="mx-2 my-1 border-dark border border-solid border-2">
+                                                <div key={index} className="mx-2 my-1 rounded-lg border-dark border border-solid border-2">
                                                     <img
                                                         style={{
                                                             maxHeight: '200px'
@@ -207,6 +207,7 @@ const Feb = () => {
                                                         }}
                                                         key={index}
                                                         src={i.url}
+                                                        className="rounded-lg"
                                                     />
                                                 </div>
                                             )

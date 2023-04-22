@@ -238,7 +238,7 @@ const Mar = () => {
                   return (
                     <div
                       key={index}
-                      className="mx-2 my-1 border-dark border border-solid border-2"
+                      className="mx-2 my-1 rounded-lg border-dark border border-solid border-2"
                     >
                       <img
                         style={{
@@ -246,6 +246,7 @@ const Mar = () => {
                         }}
                         key={index}
                         src={i.url}
+                        className="rounded-lg"
                       />
                     </div>
                   );

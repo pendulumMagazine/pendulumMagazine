@@ -75,7 +75,8 @@ const UnionMembers = () => {
   return (
     <>
       <div className="px-10">
-        <p className="family mt-10 mb-10">Our Vote Of Thanks</p>
+        <p className="family mt-10">Our Vote Of Thanks</p>
+        <hr style={{ width: "80%" }} />
         <img
           style={{ width: "800px", height: "500px" }}
           src={require("../elements/voteOfThanks.jpg")}

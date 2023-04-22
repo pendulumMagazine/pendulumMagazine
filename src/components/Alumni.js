@@ -127,7 +127,7 @@ const Alumni = () => {
     <>
       <center>
         <p className="text-red-600 font-bold">
-          all those efforts were not in vein..here by we proudly presents our
+          all those efforts were not in vain..here by we proudly presents our
           entrepreneurs emerged out from those dark days
         </p>
         <Carousel

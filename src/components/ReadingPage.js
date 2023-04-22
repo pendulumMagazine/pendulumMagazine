@@ -14,7 +14,7 @@ const ReadingPage = () => {
   const navigate = useNavigate();
   // console.log(params)
 
-  const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState({});
 
   useEffect(() => {
     (async () => {
@@ -28,16 +28,18 @@ const ReadingPage = () => {
         img: JSON.stringify(post.get("img")._url),
         batch: post.get("batch"),
         author: post.get("author"),
-        aurhorImg: post.get("aurhorImg"),
+        authorImg: post.get("authorImg")._url,
       });
-
-      // console.log(info.img)
     })();
     return () => {};
   }, []);
+
   return (
     <div>
-      <p className="cursor backButton1" onClick={() => navigate(-1)}>
+      <p
+        className="hidden sm:block cursor backButton1"
+        onClick={() => navigate(-1)}
+      >
         &#x1F870;
       </p>
       {/* <div onClick={() => navigate(-1)} className="cursor button-28">&#x1F870;</div> */}
@@ -52,7 +54,7 @@ const ReadingPage = () => {
       >
         <div
           style={{
-            width: "100%",
+            width: "75%",
             textAlign: "center",
             fontSize: "250%",
             color: "white",
@@ -62,6 +64,17 @@ const ReadingPage = () => {
             // opacity: '1'
           }}
         >
+          <img
+            src={`${info.authorImg}`}
+            style={{
+              width: "165px",
+              height: "200px",
+              position: "absolute",
+              right: "5%",
+              bottom: "20%",
+            }}
+            className="sm:block hidden rounded-lg opacity-"
+          />
           <h1
             className="cursor module line-clamp headingText"
             style={{
@@ -110,8 +123,15 @@ const ReadingPage = () => {
           }}
         >
           {info.description}
+          <img
+            src={`${info.authorImg}`}
+            style={{
+              width: "165px",
+              height: "200px",
+            }}
+            className="my-3 block sm:hidden rounded-lg opacity-"
+          />
         </p>
-        {info.authorImg !== undefined ? <img src={info.authorImg} /> : null}
       </div>
     </div>
   );

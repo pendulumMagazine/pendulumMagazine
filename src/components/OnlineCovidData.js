@@ -25,6 +25,13 @@ const OnlineCovidData = () => {
             <div className="sm:px-20 px-10">
               <h1>{item.title}</h1>
               {/* <center> */}
+
+              {/* </center> */}
+              <div className="py-3">
+                <p className="font-bold" style={{ whiteSpace: "break-spaces" }}>
+                  {item.description}
+                </p>
+              </div>
               <img
                 style={{
                   height: "500px",
@@ -34,12 +41,6 @@ const OnlineCovidData = () => {
                 alt="title image"
                 src={"/img/" + tmpImgURL}
               />
-              {/* </center> */}
-              <div className="py-3">
-                <p className="font-bold" style={{ whiteSpace: "break-spaces" }}>
-                  {item.description}
-                </p>
-              </div>
 
               <div
                 style={{ position: "relative" }}

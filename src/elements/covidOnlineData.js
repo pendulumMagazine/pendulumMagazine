@@ -181,7 +181,7 @@ const covidOnlineDataArray = [
         img: "./covidOnline/Stories/Ameera.jpg",
         author: "AMEERA HIBATHULLA",
         batch: "24 BATCH",
-        authorImg: "",
+        authorImg: "./covidOnline/Stories/Ameera.jpg",
       },
     ],
   },
