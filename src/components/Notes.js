@@ -29,14 +29,14 @@ const Notes = () => {
 
   const notesArray = [
     {
-      img: "img/notesElements/principleNote.jpg",
+      img: "img/notesElements/principle.jpg",
       name: "Prof. Dr. M.G. Radhesh",
       designation: "Principal, DPMHMC",
       text: `Nurturing creativity and inspiring innovation are two of the ket elements of a successful nursing education, and a college magazine is the perfect amalgamation of both. Hence, Iam delighted to know that College union 2020-21's college E- magazine "Pendulum" Is ready for publication. I wish success to this endeavor.
       `,
     },
     {
-      img: "img/notesElements/magazineEditor.png",
+      img: "img/notesElements/magazineEditor.jpg",
       name: "Fahma PT",
       designation: "Magazine Editor",
       text: `2020 college union ചുമതല ഏറ്റെടുക്കുമ്പോൾ തികച്ചും സർവ്വസാധാരണയായ ദിനങ്ങളായിരുന്നു. Centenary ആഘോഷവും യൂണിയൻ പ്രവർത്തനങ്ങളുമായി കർമ നിരതമായ കോളേജ് കാലഘട്ടം... 
@@ -46,7 +46,7 @@ const Notes = () => {
       `,
     },
     {
-      img: "img/notesElements/staffAdvisor.png",
+      img: "img/notesElements/staffAdvisor.jpg",
       name: "Dr Ganesh Das",
       designation: "Staff Editor",
       text: `2020 - 21 കോളേജ് യൂണിയൻ കാലഘട്ടം Pendulum എന്ന ഒരു പദം കൊണ്ട് അർത്ഥവത്താണ്. Pendulum ത്തിന്റെ ഒരു Maximum point ന് സമാനമായി Ablaze college union പ്രവർത്തനം ആരംഭിക്കുകയും അപ്രതീക്ഷിതമായുണ്ടായ വ്യതിചലനത്തിന്റെ ഒരു minimum point നെ തരണം ചെയ്ത് അടുത്ത maximum point കീഴടക്കുന്നതുമായിരുന്നു 2020-21 കോളേജ് യൂണിയൻ. .. 
@@ -150,15 +150,13 @@ const Notes = () => {
                     //   borderRadius: "500px",
                   }}
                 >
-                  <div class="mx-auto h-full bg-white rounded-lg shadow-md">
+                  <div class="mx-auto my-auto sm:h-80 bg-white rounded-lg shadow-md">
                     <div class="md:flex">
-                      <div class="shrink-0">
-                        <img
-                          class="rounded-lg object-cover"
-                          src={key.img}
-                          style={{ width: "500px", height: "300px" }}
-                        />
-                      </div>
+                      <img
+                        class="rounded-full"
+                        style={{ width: "500px", height: "300px" }}
+                        src={key.img}
+                      />
                       <div class="p-8">
                         <p class="mt-2 text-sm text-gray-900 tracking-wide">
                           {key.text}
