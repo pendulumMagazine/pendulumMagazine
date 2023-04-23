@@ -75,10 +75,17 @@ const UnionMembers = () => {
   return (
     <>
       <div className="px-10">
-        <p className="family mt-10">Our Vote Of Thanks</p>
+        <p
+          className="family mt-10"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          Our Vote Of Thanks
+        </p>
         <hr style={{ width: "80%" }} />
         <img
-          style={{ width: "800px", height: "500px" }}
+          style={{ width: "90%", height: "auto" }}
           src={require("../elements/voteOfThanks.jpg")}
         />
         <p className="text-red-600 font-bold my-3">
@@ -96,7 +103,14 @@ const UnionMembers = () => {
           വന്നിട്ടുണ്ടാകും. ഒറ്റവാക്കിൽ ക്ഷമ ചോദിക്കട്ടെ... ഞങ്ങൾക്കൊപ്പം നിന്ന
           എല്ലാവർക്കും ഹൃദയം നിറഞ്ഞ നന്ദി...
         </p>
-        <p className="family mt-10 mb-10">Union Members</p>
+        <p
+          className="family mt-10 mb-10"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          Union Members
+        </p>
         <Carousel
           // partialVisible={true}
           responsive={responsive}

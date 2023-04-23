@@ -50,11 +50,22 @@ const Family = () => {
       url: "img/family/27th Batch.JPG",
       batch: "27 BATCH",
     },
+    {
+      url: "img/family/teacher.JPG",
+      batch: "Teachers",
+    },
   ];
   return (
     <>
       <div className="px-10">
-        <p className="family mt-10">Family</p>
+        <p
+          className="family mt-10"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          Family
+        </p>
         <hr style={{ width: "80%" }} />
         <Carousel
           // partialVisible={true}
@@ -75,24 +86,22 @@ const Family = () => {
                 <div
                   key={index}
                   // onClick={() => openprofile(key.id)}
-                  className="tet"
+                  className="test2"
                   style={{
                     marginLeft: "5%",
                     //   background: "gray",
                     backgroundImage: `url("${key.url}")`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
                     fontSize: "150%",
                     height: "30vh",
                     width: "80%",
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     borderRadius: "2%",
                     backgroundPosition: "center",
                     alignItems: "center",
                     justifyContent: "center",
                     textDecoration: "none",
-                    color: "white",
+                    // color: "white",
                     //   borderRadius: "500px",
                   }}
                   //   to={"./family/" + key.batch.trim()}
@@ -100,9 +109,19 @@ const Family = () => {
                 >
                   <center className="bruh" style={{ width: "85%" }}>
                     {/* <img className="rounded" src={key.url} /> */}
-                    <h1 className="text-center text-gray-900 font-black text-2xl">
+                    <p
+                      className="modulo line-clamp headingText"
+                      style={{
+                        fontSize: "100%",
+                        fontFamily: "fantasy",
+                        color: "#000000",
+                        letterSpacing: "4px",
+                        position: "absolute",
+                        bottom: 0,
+                      }}
+                    >
                       {key.batch}
-                    </h1>
+                    </p>
                     {/* <p className="text-center text-gray-900 font-thin text-lg">
                       {key.designation}
                     </p> */}

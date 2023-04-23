@@ -70,7 +70,14 @@ const CovidComponent = () => {
   return (
     <center className>
       <div className="">
-        <p className="family">Covid Section</p>
+        <p
+          className="family"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          Covid Section
+        </p>
         <hr style={{ maxWidth: "80%" }} />
         <div className="">
           <img
@@ -79,7 +86,14 @@ const CovidComponent = () => {
           />
         </div>
         <div className="">
-          <p className="family mt-10">Awareness and prevention</p>
+          <p
+            className="family mt-10"
+            style={{
+              fontFamily: "Courgette",
+            }}
+          >
+            Awareness and prevention
+          </p>
           <div className="">
             <Carousel
               // partialVisible={true}

@@ -31,7 +31,14 @@ const OnlineCovidSection = () => {
   return (
     <>
       <center>
-        <p className="family mt-10">Online Covid Section</p>
+        <p
+          className="family mt-10"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          Online Covid Section
+        </p>
         <div>
           {/* <Link to={{ pathname: `/monthlyreports` }}>
             <button

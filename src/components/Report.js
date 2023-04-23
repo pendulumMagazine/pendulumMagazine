@@ -92,7 +92,12 @@ const Report = () => {
   ];
   return (
     <div>
-      <p className="family mt-10">
+      <p
+        className="family mt-10"
+        style={{
+          fontFamily: "Courgette",
+        }}
+      >
         റിപ്പോർട്ട് {"("}Report{")"}
       </p>
       <div>
@@ -115,7 +120,9 @@ const Report = () => {
       {reportItems.map((item, index) => {
         return (
           <center className="mt-5">
-            <p className="tracking-wide container font-medium px-10">{item.text}</p>
+            <p className="tracking-wide container font-medium px-10">
+              {item.text}
+            </p>
             <div className="">
               <Carousel
                 // partialVisible={true}

@@ -43,7 +43,14 @@ const Gallery = () => {
       className="container"
       style={{ display: `${array === [] ? `none` : `block`}` }}
     >
-      <p className="family">Gallery</p>
+      <p
+        className="family"
+        style={{
+          fontFamily: "Courgette",
+        }}
+      >
+        Gallery
+      </p>
       <div>
         <Link to={{ pathname: `/gallery` }}>
           <button

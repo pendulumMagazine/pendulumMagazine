@@ -125,7 +125,12 @@ const ForTheFirstTime = () => {
   return (
     <>
       <center className="">
-        <p className="text-center family underline underline-offset-8">
+        <p
+          className="text-center family underline underline-offset-8"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
           For The First Time
         </p>
         <hr style={{ maxWidth: "80%" }} />

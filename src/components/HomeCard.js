@@ -5,7 +5,6 @@ import "../styles/HomeCard.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const HomeCard = ({ heading, title }) => {
-
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -36,7 +35,14 @@ const HomeCard = ({ heading, title }) => {
       className="container"
       style={{ display: `${heading === [] ? `none` : `block`}` }}
     >
-      <p className="family">{title} </p>
+      <p
+        className="family"
+        style={{
+          fontFamily: "Courgette",
+        }}
+      >
+        {title}{" "}
+      </p>
       <div style={{ marginTop: "12px" }}>
         <Link to={{ pathname: `/viewall/${title}` }}>
           <button

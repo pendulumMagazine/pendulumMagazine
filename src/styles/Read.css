@@ -1,119 +1,111 @@
 .hero {
-        position: relative;
-        height: 100vh;
-        /* width: 100%; */
-        display: flex;
-        align-items: 'center';
-        justify-content: 'center';
-        /* background-image: url('https://placekitten.com/1200/800'); */
-        background-size: cover;
-        font-family: 'Helvetica Neue', sans-serif;
-
-
+  position: relative;
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  align-items: "center";
+  justify-content: "center";
+  /* background-image: url('https://placekitten.com/1200/800'); */
+  background-size: cover;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .hero:before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        background-color: rgba(0, 0, 0, 0.750);
-        border-radius: '15px'
-
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: "15px";
 }
 
 .headingText {
-        position: relative;
-        color: #ffffff;
-        /* font-size: 14rem; */
-        line-height: 1.2;
-        text-align: center;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        font-family: 'Helvetica Neue', sans-serif;
-        letter-spacing: 4px;
+  position: relative;
+  color: #ffffff;
+  /* font-size: 14rem; */
+  line-height: 1.2;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: "Princess Sofia", cursive;
+  letter-spacing: 4px;
 }
 
-
 .button-28 {
-        font-size: 25px;
-        font-weight: bolder;
-        position: absolute;
-        /* float: left; */
-        /* left: 50px;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  /* float: left; */
+  /* left: 50px;
         top: 50px; */
-        color: #fff;
-        z-index: 1;
-        transition: 2s;
+  color: #fff;
+  z-index: 1;
+  transition: 2s;
 }
 
 .button-28:hover {
-        transform: scale(1.5);
-        color: #E93737;
+  transform: scale(1.5);
+  color: #e93737;
 }
 
 .test {
-        position: relative;
-        height: 100vh;
-        /* width: 100%; */
-        display: flex;
-        align-items: '';
-        justify-content: '';
-        /* background-image: url('https://placekitten.com/1200/800'); */
-        background-size: cover;
-        transition: 0.2s;
+  position: relative;
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  /* background-image: url('https://placekitten.com/1200/800'); */
+  background-size: cover;
+  transition: 0.2s;
 }
 
 .test::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        background-color: #232323bf;
-        border-radius: 2%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #232323bf;
+  border-radius: 2%;
 }
 
 .test::after {
-        background-color: #ffffff;
-        border-radius: 2%;
+  background-color: #ffffff;
+  border-radius: 2%;
 }
 
-
 .backButton1 {
-        position: absolute;
-        z-index: 1;
-        left: 50px;
-        top: 10px;
-        color: #fff;
-        font-size: x-large;
-        transition: 0.2s;
-
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: 10px;
+  color: #fff;
+  font-size: x-large;
+  transition: 0.2s;
 }
 
 .backButton {
-        position: absolute;
-        z-index: 1;
-        left: 50px;
-        top: 10px;
-        color: rgb(rgb(202, 19, 19));
-        font-size: x-large;
-        transition: 0.2s;
-
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: 10px;
+  color: rgb(rgb(202, 19, 19));
+  font-size: x-large;
+  transition: 0.2s;
 }
 
 .backButton1:hover {
-        transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .cursor {
-        caret-color: transparent;
-        cursor: pointer;
-
+  caret-color: transparent;
+  cursor: pointer;
 }

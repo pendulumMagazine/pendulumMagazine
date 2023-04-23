@@ -55,7 +55,14 @@ const Home = () => {
         <Family />
         <UnionMembers />
 
-        <h1 className="text-center">THANKYOU</h1>
+        <h1
+          className="text-center"
+          style={{
+            fontFamily: "Courgette",
+          }}
+        >
+          THANKYOU
+        </h1>
         <footer class="bg-gray-200 text-center dark:bg-gray-700 lg:text-left">
           <div class="p-4 text-center text-gray-700 dark:text-gray-200">
             © 2023 Copyright:
