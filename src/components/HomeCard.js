@@ -38,7 +38,7 @@ const HomeCard = ({ heading, title }) => {
       <p
         className="family"
         style={{
-          fontFamily: "Courgette",
+          fontFamily: "Oswald",
         }}
       >
         {title}{" "}

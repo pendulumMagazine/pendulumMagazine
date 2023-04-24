@@ -73,7 +73,7 @@ const CovidComponent = () => {
         <p
           className="family"
           style={{
-            fontFamily: "Courgette",
+            fontFamily: "Oswald",
           }}
         >
           Covid Section
@@ -86,12 +86,7 @@ const CovidComponent = () => {
           />
         </div>
         <div className="">
-          <p
-            className="family mt-10"
-            style={{
-              fontFamily: "Courgette",
-            }}
-          >
+          <p className="family mt-10" style={{ fontFamily: "Oswald" }}>
             Awareness and prevention
           </p>
           <div className="">

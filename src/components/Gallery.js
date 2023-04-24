@@ -46,7 +46,7 @@ const Gallery = () => {
       <p
         className="family"
         style={{
-          fontFamily: "Courgette",
+          fontFamily: "Oswald",
         }}
       >
         Gallery

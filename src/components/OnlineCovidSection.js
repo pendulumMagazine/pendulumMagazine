@@ -31,12 +31,7 @@ const OnlineCovidSection = () => {
   return (
     <>
       <center>
-        <p
-          className="family mt-10"
-          style={{
-            fontFamily: "Courgette",
-          }}
-        >
+        <p className="family mt-10" style={{ fontFamily: "Oswald" }}>
           Online Covid Section
         </p>
         <div>

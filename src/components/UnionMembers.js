@@ -75,12 +75,7 @@ const UnionMembers = () => {
   return (
     <>
       <div className="px-10">
-        <p
-          className="family mt-10"
-          style={{
-            fontFamily: "Courgette",
-          }}
-        >
+        <p className="family mt-10" style={{ fontFamily: "Oswald" }}>
           Our Vote Of Thanks
         </p>
         <hr style={{ width: "80%" }} />

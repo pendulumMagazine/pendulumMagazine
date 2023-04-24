@@ -95,7 +95,7 @@ const Report = () => {
       <p
         className="family mt-10"
         style={{
-          fontFamily: "Courgette",
+          fontFamily: "Oswald",
         }}
       >
         റിപ്പോർട്ട് {"("}Report{")"}

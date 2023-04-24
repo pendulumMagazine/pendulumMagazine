@@ -127,9 +127,7 @@ const ForTheFirstTime = () => {
       <center className="">
         <p
           className="text-center family underline underline-offset-8"
-          style={{
-            fontFamily: "Courgette",
-          }}
+          style={{ fontFamily: "Oswald" }}
         >
           For The First Time
         </p>
