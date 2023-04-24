@@ -325,6 +325,14 @@ const covidOnlineDataArray = [
         batch: "24 BATCH",
         authorImg: "",
       },
+      {
+        title: "",
+        description: ``,
+        img: "./covidOnline/Memories/keerthi.jpg",
+        author: "KEERTHI VENKIDESWARAN",
+        batch: "24 BATCH",
+        authorImg: "./covidOnline/Memories/keerthiAuth.jpg",
+      },
       // {
       //   title: "",
       //   description: `This Pic was taken on a Sunday evening of 2019 at my hostel, when I was reading 2 states for the nth time..

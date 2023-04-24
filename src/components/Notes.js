@@ -153,7 +153,7 @@ const Notes = () => {
                   <div class="mx-auto my-auto sm:h-80 bg-white rounded-lg shadow-md">
                     <div class="md:flex">
                       <img
-                        class="rounded-full"
+                        class="rounded-full my-2"
                         style={{ width: "500px", height: "300px" }}
                         src={key.img}
                       />

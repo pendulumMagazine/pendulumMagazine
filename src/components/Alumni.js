@@ -126,7 +126,10 @@ const Alumni = () => {
   return (
     <>
       <center>
-        <p className="text-red-600 font-bold">
+        <p className="text-blue-600 font-bold"
+        style={{
+          fontFamily: "Courgette",
+        }}>
           all those efforts were not in vain..here by we proudly presents our
           entrepreneurs emerged out from those dark days
         </p>
